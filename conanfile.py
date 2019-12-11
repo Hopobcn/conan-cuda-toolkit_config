@@ -72,8 +72,8 @@ class CudaRuntimeConfigConan(ConanFile):
     @property
     def _cuda_runtime_default_install_path(self):
         if os_info.is_windows:
-            #windows_program_files = os.getenv('ProgramFiles', "\Program Files")
-            default_install_path = Path("/NVIDIA GPU Computing Toolkit/CUDA/v{}".format(self._cuda_version))
+            windows_program_files = os.getenv('ProgramFiles', "\Program Files")
+            default_install_path = Path("{}/NVIDIA GPU Computing Toolkit/CUDA/v{}".format(windows_program_files, self._cuda_version))
         elif os_info.is_macos:
             default_install_path = "/Developer/NVIDIA/CUDA-{}".format(self._cuda_version)
         else:
