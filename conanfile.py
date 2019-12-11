@@ -9,7 +9,7 @@ class CudaRuntimeConfigConan(ConanFile):
     version = "10.2"
     license = "NVIDIA EULA"
     description = "NVIDIA CUDA Runtime library"
-    url = "<Package recipe repository url here, for issues about the package>"
+    url = "https://github.com/Hopobcn/conan-cuda-toolkit_config"
     topics = ("conan", "cuda", "cuda-runtime", "cuda-toolkit")
     build_policy = "missing"
     
