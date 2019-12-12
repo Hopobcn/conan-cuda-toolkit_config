@@ -6,7 +6,6 @@ import os
 
 class CudaRuntimeConfigConan(ConanFile):
     name = "cuda-runtime_config"
-    version = "10.2"
     license = "NVIDIA EULA"
     description = "NVIDIA CUDA Runtime library"
     url = "https://github.com/Hopobcn/conan-cuda-toolkit_config"
